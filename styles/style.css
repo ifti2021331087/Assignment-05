@@ -187,3 +187,20 @@ body {
   border-radius: 5px;
   cursor: pointer;
 } 
+
+.hidden{
+  display: none;
+}
+
+.center{
+  text-align: center;
+}
+.history{
+  font-size: 2rem;
+  border:1px solid black;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
