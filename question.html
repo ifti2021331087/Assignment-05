@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate Bangladesh</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-class">
+      <button class="blog-btn"><a href="index.html">Home</a></button>
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="">
+        <h1 class="nav-logo-title">Donate Bangladesh</h1>
+      </div>
+      <div class="nav-coin">
+        <img class="nav-coin-img" src="assets/coin.png" alt="">
+        <p id="main-account" class="coin">10000</p>
+        <p class="nav-coin-title">BDT</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What caused the floods in Noakhali?</div>
+            <div class="faq-answer">
+                <p>The floods were caused by heavy monsoon rains and river overflow.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I donate to flood victims?</div>
+            <div class="faq-answer">
+                <p>You can donate through trusted local relief organizations and online platforms.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What happened in Feni due to the floods?</div>
+            <div class="faq-answer">
+                <p>The floods have caused severe damage to homes, infrastructure, and crops in Feni.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What supplies are urgently needed in Feni?</div>
+            <div class="faq-answer">
+                <p>Food, drinking water, medical supplies, and temporary shelter are crucial right now.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What medical aid is needed for the injured from the Quota movement?</div>
+            <div class="faq-answer">
+                <p>The injured need surgical treatment, rehabilitation, and mental health support.</p>
+            </div>
+        </div>
+    </div>
+    
+  </main>
+  <script src="js/random.js"></script>
+  <script src="js/donation.js"></script>
+  <script src="js/feature.js"></script>
+  <script src="js/extra.js"></script>
+  <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

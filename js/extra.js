@@ -9,3 +9,4 @@ document.getElementById('history-tab').addEventListener('click',function(){
     document.getElementById('history-container').classList.remove('hidden');
     document.getElementById('history-tab').classList.add('active');
 });
+
