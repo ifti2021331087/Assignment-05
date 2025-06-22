@@ -11,10 +11,15 @@ body {
 }
 
 .navbar {
+  position: fixed;
   background: #F9F7F3;
+  opacity: 0.8;
   padding: 1rem 2rem;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
 }
+
 .nav-class{
   padding-left: 8%;
   padding-right: 8%;
@@ -63,7 +68,9 @@ body {
 .main-content {
   padding: 2rem;
 }
-
+.main-adjust{
+  margin-top: 12%;
+}
 .tabs {
   display: flex;
   justify-content:center;
@@ -267,4 +274,77 @@ a {
 
         .faq-item.active .faq-question::after {
             content: '−';
+        }
+
+.question-adjust{
+   margin-top: 12%;
+}
+
+
+/* reward-card */
+.reward-card {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            padding: 70px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            width: 90%;
+            z-index: 1000;
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+        .reward-card.show {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .reward-card h2 {
+            margin: 0 0 20px;
+            font-size: 48px;
+        }
+
+        .reward-card p {
+            margin: 0 0 40px;
+            font-size: 32px;
+        }
+
+        .reward-card button {
+            padding: 20px 40px;
+            background-color: #fff;
+            color: #ff7e5f;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+
+        .reward-card button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
         }

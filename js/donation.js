@@ -4,10 +4,7 @@ document.getElementById('donateN').addEventListener('click',function(event){
     const mainBalance=getTextValue('main-account');
     const inputBalance=getInputValue('inputN');
     const showBalance=getTextValue('showN');
-    if(isNaN(inputBalance)){
-        alert('Invalid Input');
-        return;
-    }
+
     if(inputBalance>0 && inputBalance<=mainBalance){
         
         const newBalance=showBalance+inputBalance;
@@ -25,12 +22,6 @@ document.getElementById('donateN').addEventListener('click',function(event){
         `
         document.getElementById('history-container').appendChild(div);
     }
-    else if(mainBalance<=0){
-        alert('Your Account Balance Is Not Enough');
-    }
-    else{
-        alert('Invalid Input');
-    }
 
 
 });
@@ -40,10 +31,7 @@ document.getElementById('donateF').addEventListener('click',function(event){
     const mainBalance=getTextValue('main-account');
     const inputBalance=getInputValue('inputF');
     const showBalance=getTextValue('showF');
-    if(isNaN(inputBalance)){
-        alert('Invalid Input');
-        return;
-    }
+
     if(inputBalance>0 && inputBalance<=mainBalance){
         
         const newBalance=showBalance+inputBalance;
@@ -61,12 +49,7 @@ document.getElementById('donateF').addEventListener('click',function(event){
         `
         document.getElementById('history-container').appendChild(div);
     }
-    else if(mainBalance<=0){
-        alert('Your Account Balance Is Not Enough');
-    }
-    else{
-        alert('Invalid Input');
-    }
+    
 });
 
 document.getElementById('donateQ').addEventListener('click',function(event){
@@ -74,10 +57,7 @@ document.getElementById('donateQ').addEventListener('click',function(event){
     const mainBalance=getTextValue('main-account');
     const inputBalance=getInputValue('inputQ');
     const showBalance=getTextValue('showQ');
-    if(isNaN(inputBalance)){
-        alert('Invalid Input');
-        return;
-    }
+
     if(inputBalance>0 && inputBalance<=mainBalance){
         
         const newBalance=showBalance+inputBalance;
@@ -95,10 +75,28 @@ document.getElementById('donateQ').addEventListener('click',function(event){
         `
         document.getElementById('history-container').appendChild(div);
     }
-    else if(mainBalance<=0){
-        alert('Your Account Balance Is Not Enough');
-    }
-    else{
-        alert('Invalid Input');
-    }
+    
 });
+
+
+
+
+
+function showRewardCard(id) {
+            const amount = document.getElementById(id).value;
+            const mainBalance=getTextValue('main-account');
+            if (!amount || amount <= 0 || amount>mainBalance || isNaN(amount)) {
+                alert('Please enter a valid donation amount.');
+                return;
+            }
+
+            document.getElementById('amount').textContent = amount;
+            document.getElementById('reward-card').classList.add('show');
+            document.getElementById('overlay').classList.add('show');
+        }
+
+        function closeRewardCard(id) {
+            document.getElementById('reward-card').classList.remove('show');
+            document.getElementById('overlay').classList.remove('show');
+            document.getElementById(id).value = '';
+        }
