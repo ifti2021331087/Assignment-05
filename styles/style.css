@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  background: #F9F7F3;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-class{
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 2.5%;
+  padding-bottom: 5.5%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+}
+.blog-btn {
+  width: 5.5vw;
+  height: 4vh;
+  font-size: 1.8rem;
+  background: #82e291;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.nav-logo{
+  display: flex;
+  gap: 10px;
+}
+.nav-logo-title{
+  font-size: 50px;
+}
+.nav-coin{
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+.nav-coin-img{
+  width: auto;
+  height: 50px;
+}
+.coin{
+  font-size: 50px;
+}
+.nav-coin-title {
+  font-size: 50px;
+  padding-left: 7px;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 8vw;
+  height: 5vh;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.tab.active {
+  width: 8vw;
+  height: 5vh;
+  background: #82e291;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* card related */
+.card {
+  margin-left: 13%;
+  margin-right: 13%;
+  padding: 4%;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  gap: 45px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.card-coin{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+  gap: 8px;
+
+}
+.card-coin-ms{
+  font-size: 1.5rem;
+}
+.card-coin-img{
+  width: auto;
+  height: auto;
+}
+.card img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  
+  padding: 1.2rem;
+  flex: 1;
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+#card-header-title{
+  padding-top: 8px;
+  padding-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: medium;
+}
+.card-header .coin {
+  font-size: 14px;
+  color: #444;
+}
+
+.card-content h3 {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: #555;
+}
+#card-header-content{
+  font-weight: 1px;
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 2.1rem;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+.card-content input {
+  width: 100%;
+  padding: 35px 10px;
+  font-size:2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.donate-btn {
+  background: #82e291;
+  border: none;
+  padding: 35px 10px;
+  font-size:2rem;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+} 
