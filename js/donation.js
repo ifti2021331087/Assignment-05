@@ -17,7 +17,7 @@ document.getElementById('donateN').addEventListener('click',function(event){
         const now = new Date();
         const timeString = now.toLocaleString();
         div.innerHTML=`
-            <p>${inputBalance} is donated for flood relief in Noakhali , Bangladesh.</p>
+            <p>${inputBalance} BDT is donated for flood relief in Noakhali , Bangladesh.</p>
             <p>${timeString}</p>
         `
         document.getElementById('history-container').appendChild(div);
@@ -44,7 +44,7 @@ document.getElementById('donateF').addEventListener('click',function(event){
         const now = new Date();
         const timeString = now.toLocaleString();
         div.innerHTML=`
-            <p>${inputBalance} is donated for flood relief in Feni , Bangladesh.</p>
+            <p>${inputBalance} BDT is donated for flood relief in Feni , Bangladesh.</p>
             <p>${timeString}</p>
         `
         document.getElementById('history-container').appendChild(div);
@@ -70,7 +70,7 @@ document.getElementById('donateQ').addEventListener('click',function(event){
         const now = new Date();
         const timeString = now.toLocaleString();
         div.innerHTML=`
-            <p>${inputBalance} is donated for the injured in the quota movement.</p>
+            <p>${inputBalance} BDT is donated for the injured in the quota movement.</p>
             <p>${timeString}</p>
         `
         document.getElementById('history-container').appendChild(div);

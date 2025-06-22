@@ -1,4 +1,5 @@
-* {
+
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,9 +32,9 @@ body {
 
 }
 .blog-btn {
-  width: 5.5vw;
-  height: 4vh;
-  font-size: 1.8rem;
+  width: 6vw;
+  height: 6vh;
+  font-size: 1.2rem;
   background: #82e291;
   border: none;
   padding: 6px 18px;
@@ -43,24 +44,26 @@ body {
 .nav-logo{
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .nav-logo-title{
-  font-size: 50px;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .nav-coin{
   display: flex;
   align-items: center;
-  /* gap: 20px; */
+  height: 6vh;
 }
 .nav-coin-img{
   width: auto;
-  height: 50px;
 }
 .coin{
-  font-size: 50px;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .nav-coin-title {
-  font-size: 50px;
+  font-size: 1.4rem;
   padding-left: 7px;
   font-weight: bold;
 }
@@ -69,47 +72,48 @@ body {
   padding: 2rem;
 }
 .main-adjust{
-  margin-top: 12%;
+  margin-top: 13%;
 }
 .tabs {
   display: flex;
   justify-content:center;
   gap: 10px;
-  margin-bottom: 2rem;
-  font-size: 4rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .tab {
   padding: 10px 20px;
   border-radius: 6px;
   width: 8vw;
-  height: 5vh;
+  height: 6vh;
   border: 1px solid #ccc;
   background: #fff;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .tab.active {
   width: 8vw;
-  height: 5vh;
+  height: 6vh;
   background: #82e291;
   color: #000;
-  font-size: 2rem;
-  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  /* font-weight: bold; */
 }
 
-/* card related */
+
 .card {
-  margin-left: 13%;
-  margin-right: 13%;
-  padding: 4%;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 2%;
   background: #fff;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 2rem;
-  gap: 45px;
+  gap: 2rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .card-coin{
@@ -117,16 +121,16 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
-  padding: 8px 14px;
-  border-radius: 12px;
+  padding: 2px 4px;
+  border-radius: 8px;
   font-weight: bold;
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   gap: 8px;
 
 }
 .card-coin-ms{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .card-coin-img{
   width: auto;
@@ -140,7 +144,7 @@ body {
 
 .card-content {
   
-  padding: 1.2rem;
+  /* padding: 1.2rem; */
   flex: 1;
 }
 
@@ -148,9 +152,9 @@ body {
   margin-bottom: 10px;
 }
 #card-header-title{
-  padding-top: 8px;
-  padding-bottom: 5px;
-  font-size: 2.5rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 1.4rem;
   font-weight: medium;
 }
 .card-header .coin {
@@ -171,14 +175,14 @@ body {
 #card-header-content{
   font-weight: 1px;
   color: rgba(17, 17, 17, 0.7);
-  font-size: 2.1rem;
+  font-size: 1.2rem;
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .card-content input {
   width: 100%;
-  padding: 35px 10px;
-  font-size:2rem;
+  padding: 15px 4px;
+  font-size:1.2rem;
   margin-bottom: 1rem;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -187,8 +191,8 @@ body {
 .donate-btn {
   background: #82e291;
   border: none;
-  padding: 35px 10px;
-  font-size:2rem;
+  padding: 15px 4px;
+  font-size:1.2rem;
   font-weight: bold;
   width: 100%;
   border-radius: 5px;
@@ -203,13 +207,13 @@ body {
   text-align: center;
 }
 .history{
-  font-size: 2rem;
+  font-size: 1rem;
   border:1px solid black;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 a {
   text-decoration: none;
@@ -217,27 +221,29 @@ a {
 }
 
 
-/* FAQ QUESTIONS */
+
 .faq-container {
             width: 70%;
             margin-left: 15%;
             background-color: white;
             border-radius: 50px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            font-size: 2rem;
+            padding: 10px;
+            font-size: 1.2rem;
         }
-
+.faq-container h2{
+  text-align: center;
+}
         .faq-item {
             padding-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 2px;
         }
 
         .faq-question {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px;
+            padding: 5px;
             background-color: #007BFF;
             color: white;
             cursor: pointer;
@@ -263,7 +269,7 @@ a {
         }
 
         .faq-item.active .faq-answer {
-            max-height: 200px; /* Adjust based on content */
+            max-height: 200px; 
             padding: 15px;
         }
 
@@ -281,7 +287,6 @@ a {
 }
 
 
-/* reward-card */
 .reward-card {
             position: fixed;
             top: 50%;
@@ -294,7 +299,8 @@ a {
             text-align: center;
             color: white;
             max-width: 800px;
-            width: 90%;
+            width: 30%;
+            height: 30%;
             z-index: 1000;
             opacity: 0;
             transition: transform 0.5s ease, opacity 0.5s ease;
@@ -307,23 +313,23 @@ a {
 
         .reward-card h2 {
             margin: 0 0 20px;
-            font-size: 48px;
+            font-size: 1.5rem;
         }
 
         .reward-card p {
             margin: 0 0 40px;
-            font-size: 32px;
+            font-size: 1.1rem;
         }
 
         .reward-card button {
-            padding: 20px 40px;
+            padding: 10px 20px;
             background-color: #fff;
             color: #ff7e5f;
             border: none;
             border-radius: 10px;
             cursor: pointer;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 1rem;
             transition: background-color 0.3s;
         }
 
@@ -348,3 +354,6 @@ a {
             opacity: 1;
             visibility: visible;
         }
+
+
+
